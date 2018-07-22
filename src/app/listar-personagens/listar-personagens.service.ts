@@ -13,7 +13,7 @@ export class ListarPersonagensService {
   ) {}
 
   public carregaPersonagem(): Observable<ListarPersonagens[]> {
-    const url = 'https://swapi.co/api/people/?format=json';
+    const url = 'https://swapi.co/api/people';
 
     return this.http.get<ListarPersonagens[]>(url,
     {withCredentials: false, responseType: 'json'}

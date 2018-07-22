@@ -12,13 +12,14 @@ import { DetalheNavesEspaciaisComponent } from './detalhe-naves-espaciais/detalh
 
 const routes: Routes = [
   { path: 'personagem', component: ListarPersonagensComponent},
-  { path: 'personagem/:id', component: DetalhePersonagemComponent,
-  canActivate: [AutenticaRota]},
+  { path: 'personagem/:url', component: DetalhePersonagemComponent,
+  canActivate: [AutenticaRota]
+},
   { path: 'planeta', component: ListarPlanetasComponent},
-  { path: 'planeta/:id', component: DetalhePlanetaComponent,
+  { path: 'planeta/:url', component: DetalhePlanetaComponent,
   canActivate: [AutenticaRota]},
   { path: 'naveespacial', component: ListarNavesEspaciaisComponent},
-  { path: 'naveespacial/:id', component: DetalheNavesEspaciaisComponent,
+  { path: 'naveespacial/:url', component: DetalheNavesEspaciaisComponent,
   canActivate: [AutenticaRota]},
 ];
 @NgModule({

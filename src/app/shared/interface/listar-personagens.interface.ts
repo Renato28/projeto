@@ -1,18 +1,23 @@
+import { Veiculos } from './veiculo.interface';
+import { Especies } from './especie.interface';
 import { ListarNavesEspaciais } from './listar-naves-espaciais.interface';
 import { Filmes } from './filmes.interface';
 export interface ListarPersonagens {
-  id: number;
-  url: string;
   name: string;
-  info: Array<ListarPersonagens>;
-  height: number;
-  mass: number;
-  hairColor: string;
-  skinColor: string;
-  eyeColor: string;
   birthYear: number;
+  eyeColor: string;
   gender: string;
-  natalPlanet: string;
-  movies: Array<Filmes>;
-  starship: Array<ListarNavesEspaciais>;
+  hairColor: string;
+  height: string;
+  mass: string;
+  skinColor: string;
+  homeworld: string;
+  films: Array<Filmes>;
+  species: Array<Especies>;
+  starships: Array<ListarNavesEspaciais>;
+  vehicles: Array<Veiculos>;
+  url: string;
+  created: string;
+  edited: string;
+
 }

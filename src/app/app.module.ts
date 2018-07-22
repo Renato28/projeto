@@ -13,6 +13,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AutenticaRota } from './guards/autentica-rota.guard';
 import { ListarPersonagensComponent } from './listar-personagens/listar-personagens.component';
 import { DetalhePersonagemComponent } from './detalhe-personagem/detalhe-personagem.component';
+import { PersonagemComponent } from './shared/personagem/personagem.component';
+import { PlanetaComponent } from './shared/planeta/planeta.component';
+import { NaveespacialComponent } from './shared/naveespacial/naveespacial.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { DetalhePersonagemComponent } from './detalhe-personagem/detalhe-persona
     DetalhePlanetaComponent,
     ListarNavesEspaciaisComponent,
     DetalheNavesEspaciaisComponent,
+    PersonagemComponent,
+    PlanetaComponent,
+    NaveespacialComponent,
   ],
   imports: [
     BrowserModule,
