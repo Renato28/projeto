@@ -1,10 +1,30 @@
 <div class="row mt-3" *ngIf="navesespaciais; else loading">
-  <div class="col-md-4" *ngFor="let naveespacial of navesespaciais">
+    <div class="col-md-11">
     <div class="col-md-12">
       <div class="card">
         <div class="card-body">
-          <h2 class="card-title">{{ naveespacial.name }}</h2>
+          <h2 class="card-title">{{ navesespaciais.name }}</h2>
         </div>
+        <label><b>MGLT:</b> {{ navesespaciais.MGLT }}</label>
+        <label><b>Capacidade de Carga:</b> {{ navesespaciais.cargo_capacity }}</label>
+        <label><b>Consumíveis:</b> {{ navesespaciais.consumables }}</label>
+        <label><b>Custo em Créditos:</b> {{ navesespaciais.cost_in_credits }}</label>
+        <label><b>Criado:</b> {{ navesespaciais.created }}</label>
+        <label><b>Equipe Técnica:</b> {{ navesespaciais.crew }}</label>
+        <label><b>Editado:</b> {{ navesespaciais.edited }}</label>
+        <label><b>Avaliação de Hyperdrive:</b> {{ navesespaciais.hyperdrive_rating }}</label>
+        <label><b>Comprimento</b>: {{ navesespaciais.length }}</label>
+        <label><b>Fabricante:</b> {{ navesespaciais.manufacturer }}</label>
+        <label><b>Velocidade Máxima de Atmosfera:</b> {{ navesespaciais.max_atmosphering_speed }}</label>
+        <label><b>Nome:</b> {{ navesespaciais.name }}</label>
+        <label><b>Passageiros:</b> {{ navesespaciais.passengers }}</label>
+        <label><b>Filmes:</b> {{ navesespaciais.films }}</label>
+        <label><b>Classe da Nave Espacial:</b> {{ navesespaciais.starship_class }}</label>
+        <label><b>URL:</b> {{ navesespaciais.url }}</label>
+
+
+
+         </div>
       </div>
     </div>
   </div>

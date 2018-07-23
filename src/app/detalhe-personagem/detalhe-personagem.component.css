@@ -1,0 +1,19 @@
+.card{
+background-image: url("https://wallpaperwire.com/wp-content/uploads/2018/03/Star-Wars-Space-Background-23.jpg")
+}
+.card-title{
+  color: darkgoldenrod;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align:center;
+}
+label{
+  color:white ;
+  padding: 15px;
+  height: 2px;
+}
+b{
+  color:orangered
+}
+
+
+

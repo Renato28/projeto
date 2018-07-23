@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { ListarPersonagensModule } from './listar-personagens/listar-personagens.module';
 import { ListarPlanetasComponent } from './listar-planetas/listar-planetas.component';
 import { DetalhePlanetaComponent } from './detalhe-planeta/detalhe-planeta.component';
 import { ListarNavesEspaciaisComponent } from './listar-naves-espaciais/listar-naves-espaciais.component';

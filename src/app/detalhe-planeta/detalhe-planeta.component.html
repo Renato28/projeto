@@ -1,10 +1,24 @@
 <div class="row mt-3" *ngIf="planetas; else loading">
-<div class="col-md-4" *ngFor="let planeta of planeta.results">
+  <div class="col-md-9">
   <div class="col-md-12">
     <div class="card">
       <div class="card-body">
-        <h2 class="card-title">{{ planeta.name }}</h2>
+        <h2 class="card-title">{{ planetas.name }}</h2>
       </div>
+      <label>Período de Rotação: {{ planetas.rotation_period }}</label>
+        <label>Período de Orbita: {{ planetas.orbital_period }}</label>
+        <label>Diametro:  {{ planetas.diameter  }}</label>
+        <label>Clima: {{ planetas.climate }}</label>
+        <label>Gravidade: {{ planetas.gravity }}</label>
+        <label>Terreno: {{ planetas.terrain }}</label>
+        <label>Água da Superfície: {{ planetas.surface_water }}</label>
+        <label>População: {{ planetas.population }}</label>
+        <label>Residente: {{ planetas.residents }}</label>
+        <label>Filmes: {{ planetas.films }}</label>
+        <label>Criado: {{ planetas.created }}</label>
+        <label>Editado: {{ planetas.edited }}</label>
+        <label>Url: {{ planetas.url }}</label>
+       </div>
     </div>
   </div>
 </div>

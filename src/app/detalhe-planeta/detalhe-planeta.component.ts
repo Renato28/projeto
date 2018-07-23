@@ -11,16 +11,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export class DetalhePlanetaComponent implements OnInit {
 
   public planetas: ListarPlanetas;
-  public getId: number;
-  public name: string;
+  public getId: string;
   public url: string;
-
 
   constructor(
     private detalhePlanetaService: DetalhePlanetaService,
     private router: ActivatedRoute,
   ) {
-    this.getId = this.router.snapshot.params['id'];
+    this.getId = this.router.snapshot.params['url'];
   }
 
   ngOnInit() {
@@ -28,7 +26,7 @@ export class DetalhePlanetaComponent implements OnInit {
   }
 
   public carregaInfoPlaneta(): any {
-    this.detalhePlanetaService.getPlanetaInfo(this.url).subscribe(
+    this.detalhePlanetaService.getPlanetaInfo(this.getId).subscribe(
       (planetas) => {
         this.planetas = planetas;
         console.log(this.planetas);

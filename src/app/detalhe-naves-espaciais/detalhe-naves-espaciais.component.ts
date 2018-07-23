@@ -10,14 +10,14 @@ import { Component, OnInit } from '@angular/core';
 export class DetalheNavesEspaciaisComponent implements OnInit {
   public navesespaciais: ListarNavesEspaciais;
   public name: string;
-  public getId: number;
+  public getId: string;
   public url: string;
 
   constructor(
     private detalheNavesEspaciaisService: DetalhesNavesEspaciaisService,
     private router: ActivatedRoute,
   ) {
-    this.getId = this.router.snapshot.params['id'];
+    this.getId = this.router.snapshot.params['url'];
   }
 
   ngOnInit() {
@@ -27,7 +27,7 @@ export class DetalheNavesEspaciaisComponent implements OnInit {
   }
 
   public carregaInfoNavesEspaciais(): any {
-    this.detalheNavesEspaciaisService.getNavesEspaciaisInfo(this.url).subscribe(
+    this.detalheNavesEspaciaisService.getNavesEspaciaisInfo(this.getId).subscribe(
       (navesespaciais) => {
         this.navesespaciais = navesespaciais;
         console.log(this.navesespaciais);

@@ -12,7 +12,6 @@ export class DetalhePersonagemComponent implements OnInit {
 
       public personagens: ListarPersonagens;
       public getId: string;
-      public name: string;
       public url: string;
 
   constructor(
@@ -30,7 +29,6 @@ export class DetalhePersonagemComponent implements OnInit {
     this.detalhePersonagemService.getPersonagemInfo(this.getId).subscribe(
       (personagens) => {
         this.personagens = personagens;
-        console.log(this.personagens);
       });
   }
 

@@ -1,15 +1,33 @@
 <div class="row mt-3" *ngIf="personagens; else loading">
+  <div class="col-md-12">
     <div class="col-md-12">
       <div class="card">
         <div class="card-body">
-          <h2 class="card-title">{{ personagens.name }}</h2>
+          <h2 class="card-title" >{{ personagens.name }}</h2>
         </div>
+
+       <label ><b>Altura:</b> {{ personagens.height }}</label>
+        <label><b>Peso: </b> {{ personagens.mass }}</label>
+        <label><b>Cor do Cabelo:</b> {{ personagens.hair_color }}</label>
+        <label><b>Cor da Pele:</b> {{ personagens.skin_color }}</label>
+        <label><b>Cor dos olhos:</b> {{ personagens.eye_color }}</label>
+        <label><b>Data de Aniversário:</b> {{ personagens.birth_year }}</label>
+        <label><b>Gênero:</b>   {{ personagens.gender }}</label>
+        <label><b>Planeta Natal:</b> <a href="https://swapi.co/api/planets/1/">{{personagens.homeworld}}</a></label>
+        <label><b>Filmes:</b>            {{ personagens.films }}</label>
+        <label><b>Espécies:</b>  <a href="https://swapi.co/api/species/1/"> {{ personagens.species }}</a></label>
+        <label><b>Veículos:</b>   {{ personagens.vehicles }}</label>
+        <label><b>Nave Espacial:</b>   {{ personagens.starships }}</label>
+        <label><b>Criado:</b>  {{ personagens.created }}</label>
+        <label><b>Editado:  </b> {{ personagens.edited }}</label>
+        <label><b>URL:</b> <a href="https://swapi.co/api/people/1/"> {{ personagens.url }}</a></label>
+
       </div>
     </div>
   </div>
+</div>
 
   <ng-template #loading>
     Carregando Informação
   </ng-template>
 
-  
