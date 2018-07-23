@@ -25,9 +25,9 @@ export class AutenticaRota implements CanActivate {
   }
 
   private verificarAcesso() {
-    this.router.navigate(['/personagem']);
-    this.router.navigate(['/planeta']);
-    this.router.navigate(['/naveespacial']);
+    this.router.navigate(['/personagens']);
+    this.router.navigate(['/planetas']);
+    this.router.navigate(['/navesespaciais']);
   }
 
 }

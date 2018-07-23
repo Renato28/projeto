@@ -11,7 +11,7 @@ import { PersonagemModule } from '../shared/personagem/personagem.module';
     PersonagemModule,
     HttpClientModule,
   ],
-  declarations: [ ListarPersonagensComponent],
+  declarations: [ListarPersonagensComponent],
   exports: [ListarPersonagensComponent]
 })
 export class ListarPersonagensModule { }

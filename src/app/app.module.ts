@@ -1,21 +1,21 @@
-import { ListarPersonagensModule } from './listar-personagens/listar-personagens.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { ListarPersonagensModule } from './listar-personagens/listar-personagens.module';
 import { ListarPlanetasComponent } from './listar-planetas/listar-planetas.component';
 import { DetalhePlanetaComponent } from './detalhe-planeta/detalhe-planeta.component';
 import { ListarNavesEspaciaisComponent } from './listar-naves-espaciais/listar-naves-espaciais.component';
 import { DetalheNavesEspaciaisComponent } from './detalhe-naves-espaciais/detalhe-naves-espaciais.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AutenticaRota } from './guards/autentica-rota.guard';
 import { ListarPersonagensComponent } from './listar-personagens/listar-personagens.component';
 import { DetalhePersonagemComponent } from './detalhe-personagem/detalhe-personagem.component';
 import { PersonagemComponent } from './shared/personagem/personagem.component';
 import { PlanetaComponent } from './shared/planeta/planeta.component';
 import { NaveespacialComponent } from './shared/naveespacial/naveespacial.component';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { NaveespacialComponent } from './shared/naveespacial/naveespacial.compon
     HttpClientModule,
     AppRoutingModule,
   ],
-  providers: [AutenticaRota],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

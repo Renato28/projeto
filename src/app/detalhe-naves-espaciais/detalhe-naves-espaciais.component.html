@@ -1,10 +1,9 @@
 <div class="row mt-3" *ngIf="navesespaciais; else loading">
-  <div class="col-md-4" *ngFor="let naveespacial of navesespaciais.info">
+  <div class="col-md-4" *ngFor="let naveespacial of navesespaciais">
     <div class="col-md-12">
       <div class="card">
         <div class="card-body">
           <h2 class="card-title">{{ naveespacial.name }}</h2>
-          <a type="button" class="btn btn-info" [routerLink]="['naveespacial', navesespaciais.url]" class="btn btn-primary">Detalhe da nave espacial</a>
         </div>
       </div>
     </div>

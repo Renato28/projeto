@@ -11,7 +11,7 @@ import { ActivatedRoute} from '@angular/router';
 export class DetalhePersonagemComponent implements OnInit {
 
       public personagens: ListarPersonagens;
-      public getId: number;
+      public getId: string;
       public name: string;
       public url: string;
 
@@ -19,7 +19,7 @@ export class DetalhePersonagemComponent implements OnInit {
       private detalhePersonagemService: DetalhePersonagemService,
       private router: ActivatedRoute,
   ) {
-    this.getId = this.router.snapshot.params['id'];
+    this.getId = this.router.snapshot.params['url'];
   }
 
   ngOnInit() {
@@ -27,7 +27,7 @@ export class DetalhePersonagemComponent implements OnInit {
   }
 
   public carregaInfoPersonagem(): any {
-    this.detalhePersonagemService.getPersonagemInfo(this.url).subscribe(
+    this.detalhePersonagemService.getPersonagemInfo(this.getId).subscribe(
       (personagens) => {
         this.personagens = personagens;
         console.log(this.personagens);

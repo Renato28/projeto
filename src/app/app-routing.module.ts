@@ -1,4 +1,3 @@
-import { AutenticaRota } from './guards/autentica-rota.guard';
 import { NgModule, } from '@angular/core';
 import { Routes, RouterModule} from '@angular/router';
 
@@ -12,16 +11,13 @@ import { DetalheNavesEspaciaisComponent } from './detalhe-naves-espaciais/detalh
 
 const routes: Routes = [
   { path: 'personagem', component: ListarPersonagensComponent},
-  { path: 'personagem/:url', component: DetalhePersonagemComponent,
-  canActivate: [AutenticaRota]
-},
+  { path: 'personagem/:url', component: DetalhePersonagemComponent},
   { path: 'planeta', component: ListarPlanetasComponent},
-  { path: 'planeta/:url', component: DetalhePlanetaComponent,
-  canActivate: [AutenticaRota]},
+  { path: 'planeta/:url', component: DetalhePlanetaComponent},
   { path: 'naveespacial', component: ListarNavesEspaciaisComponent},
-  { path: 'naveespacial/:url', component: DetalheNavesEspaciaisComponent,
-  canActivate: [AutenticaRota]},
+  { path: 'naveespacial/:url', component: DetalheNavesEspaciaisComponent},
 ];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],

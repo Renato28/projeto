@@ -1,3 +1,14 @@
-<p>
-  naveespacial works!
-</p>
+<div class="row mt-3" *ngIf="navesespaciais; else loading">
+  <div class="col-md-4" *ngFor="let naveespacial of navesespaciais.results">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ naveespacial.name }}</h5>
+        <a [routerLink]= "['/personagem', naveespacial.url]" class="btn btn-primary">Detalhe da Nave Espacial</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #loading>
+  Carregando Informações
+</ng-template>
