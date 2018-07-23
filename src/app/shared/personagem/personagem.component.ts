@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PersonagemComponent implements OnInit {
 
-  @Input() public personagens;
+  @Input() public personagem;
 
   constructor() { }
 

@@ -15,6 +15,7 @@ export class DetalhePlanetaComponent implements OnInit {
   public name: string;
   public url: string;
 
+
   constructor(
     private detalhePlanetaService: DetalhePlanetaService,
     private router: ActivatedRoute,

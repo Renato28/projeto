@@ -16,7 +16,7 @@ export class ListarNavesEspaciaisService {
   ) {}
 
   public carregaNavesEspaciais(): Observable<ListarNavesEspaciais[]> {
-    const url = 'https://swapi.co/api/starships/?format=json';
+    const url = 'https://swapi.co/api/starships';
 
     return this.http.get<ListarNavesEspaciais[]>(url,
       { withCredentials: false, responseType: 'json' }

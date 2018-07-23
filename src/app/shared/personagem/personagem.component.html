@@ -1,9 +1,9 @@
-<div class="row mt-3" *ngIf="personagens; else loading">
-  <div class="col-md-4" *ngFor="let personagem of personagens">
+<div class="row mt-3" *ngIf="personagem; else loading">
+  <div class="col-md-4" *ngFor="let personagens of personagem">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">{{ personagem.name }}</h5>
-        <a [routerLink]= "['/personagem', personagem.url]" class="btn btn-primary">Detalhe do Personagem</a>
+        <h5 class="card-title">{{ personagens.name }}</h5>
+        <a [routerLink]= "['/personagem', personagens.url]" class="btn btn-primary">Detalhe do Personagem</a>
       </div>
     </div>
   </div>

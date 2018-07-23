@@ -20,7 +20,4 @@ export interface ListarNavesEspaciais {
   url: string;
   created: string;
   edited: string;
-
-
-
 }

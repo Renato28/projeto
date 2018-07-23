@@ -16,7 +16,7 @@ export class ListarPlanetasService {
   ) {}
 
   public carregaPlaneta(): Observable<ListarPlanetas[]> {
-    const url = 'https://swapi.co/api/planets/?format=json';
+    const url = 'https://swapi.co/api/planets';
 
     return this.http.get<ListarPlanetas[]>(url,
       { withCredentials: false, responseType: 'json' }

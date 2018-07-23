@@ -1,18 +1,23 @@
+import { ListarPersonagens } from './../listar-personagens/listar-personagens.interface';
+import { Filmes } from './../shared/interface/filmes.interface';
 import { ListarNavesEspaciais } from './../shared/interface/listar-naves-espaciais.interface';
 export interface ListarNavesEspaciais {
-  id: number;
-  info: Array<ListarNavesEspaciais>;
   name: string;
   model: string;
-  manufacturer: string;
-  cost_in_credits: number;
-  length: number;
-  max_atmosphering_speed: number;
-  crew: number;
-  passengers: number;
-  cargo_capacity: number;
-  consumables: number;
-  hyperdrive_rating: number;
-  MGLT: number;
   starship_class: string;
+  manufacturer: string;
+  cost_in_credits: string;
+  length: string;
+  crew: string;
+  passengers: string;
+  max_atmosphering_speed: string;
+  hyperdrive_rating: string;
+  MGLT: string;
+  cargo_capacity: string;
+  consumables: string;
+  films: Array<Filmes>;
+  pilots: Array<ListarPersonagens>;
+  url: string;
+  created: string;
+  edited: string;
 }
